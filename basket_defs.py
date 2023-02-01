@@ -52,6 +52,34 @@ def viewCart():
 def exitCart():
     print("The cart program closed!")
 
+def chooseOptions():
+    
+    selectOpt = selectOption()
+    if selectOpt == 1:
+        addItem()
+    elif selectOpt== 2:
+        updateItem()
+    elif selectOpt() == 3:
+        removeItem()
+    elif selectOpt == 4:
+        viewCart()
+    elif selectOpt() == 5:
+        exitCart()
+    else:
+        print(ValueError)
 
-print("Choose one of the following options:\n\n 1. Add Item. \n 2. Update Item. \n 3. Remove Item. \n 4. View Cart. \n 5. Exit Cart.")
-print(selectOption())
+
+
+shop = str(input("Do you want to shop? (Y/N)\t"))
+if shop.upper() == "Y":
+    print("Choose one of the following options:\n\n 1. Add Item. \n 2. Update Item. \n 3. Remove Item. \n 4. View Cart. \n 5. Exit Cart.")
+    chooseOptions()
+   
+else:
+    no = str(input("Do you want to continue shopping? Y/N\t"))
+    if no.title() == "Y":
+        chooseOptions()
+    else:
+        print("\n\n_____________________We are sorry to see you go!_____________________\n")
+        exitCart()
+        
