@@ -57,10 +57,10 @@ def chooseOptions():
     selectOpt = selectOption()
     if selectOpt == 1:
         addItem()
-    elif selectOpt== 2:
+    elif selectOpt == 2:
         updateItem()
     elif selectOpt() == 3:
-        removeItem()
+       removeItem()
     elif selectOpt == 4:
         viewCart()
     elif selectOpt() == 5:
