@@ -5,7 +5,7 @@ def selectOption():
         option = int(input("Enter an option: "))
         return option
     except ValueError:
-        pass
+        print("Enter a valid integer. A number within the listed items")
         # print("Enter a valid integer!")
 
 def addItem():
